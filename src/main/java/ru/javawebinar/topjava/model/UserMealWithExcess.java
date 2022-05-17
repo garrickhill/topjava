@@ -27,4 +27,8 @@ public class UserMealWithExcess {
                 ", excess=" + excess +
                 '}';
     }
+
+    public static UserMealWithExcess fromUserMeal(UserMeal meal, boolean excess) {
+        return new UserMealWithExcess(meal.getDateTime(), meal.getDescription(), meal.getCalories(),excess);
+    }
 }
